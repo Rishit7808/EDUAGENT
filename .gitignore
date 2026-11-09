@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+dist/
+build/
+coverage/
+
+# Environment files
+.env*
+!.env.example
+
+# Backups and temporary files
+*.bak
+database/backup/
+*.log
+.DS_Store
+
+# Python virtual environment and cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE and Editor config
+.vscode/
+.idea/
+

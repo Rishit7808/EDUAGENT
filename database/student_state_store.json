@@ -1,0 +1,1837 @@
+{
+  "studentProgress": {
+    "student-1": {
+      "completedTopicIds": [
+        "top-1-1",
+        "top-1-2"
+      ]
+    }
+  },
+  "assessmentHistory": {
+    "student-1": [
+      {
+        "id": "res-1793972763751",
+        "courseCode": "CS201",
+        "unitTitle": "Arrays, Linked Lists and Stacks",
+        "score": 50,
+        "totalScore": 100,
+        "percentage": 50,
+        "isCompleted": true,
+        "details": {
+          "score": 50,
+          "total_score": 100,
+          "percentage": 50,
+          "weak_topics": [
+            "Singly Linked List Pointer Operations",
+            "Doubly Linked List Pointer Operations",
+            "Infix to Postfix Conversion & Expression Evaluation"
+          ],
+          "remediation_advice": "Focus targeted revision on: Singly Linked List Pointer Operations, Doubly Linked List Pointer Operations, Infix to Postfix Conversion & Expression Evaluation. Ask your AI Tutor for step-by-step concept walkthroughs.",
+          "eval_details": [
+            {
+              "id": "q-1",
+              "question": "In a singly linked list, what is the time complexity to delete a node given only a pointer to that specific node (and not the head)?",
+              "selected_option": "O(1)",
+              "correct_option": "O(n)",
+              "is_correct": false,
+              "explanation": "To delete a node in a singly linked list, you need access to the previous node to update its 'next' pointer. Since you only have the current node, you must traverse from the head to find the predecessor, resulting in O(n) complexity.",
+              "topic": "Singly Linked List Pointer Operations"
+            },
+            {
+              "id": "q-2",
+              "question": "Which of the following operations is more efficient in a doubly linked list compared to a singly linked list?",
+              "selected_option": "Searching for a specific value",
+              "correct_option": "Deleting a node given its pointer",
+              "is_correct": false,
+              "explanation": "In a doubly linked list, each node has a pointer to the previous node. This allows for O(1) deletion given a pointer to the node, as you can directly access the predecessor to update its 'next' pointer. In a singly linked list, this requires O(n) traversal.",
+              "topic": "Doubly Linked List Pointer Operations"
+            },
+            {
+              "id": "q-3",
+              "question": "When implementing a stack using a fixed-size array, what is the primary limitation compared to a linked list implementation?",
+              "selected_option": "Fixed capacity leading to overflow",
+              "correct_option": "Fixed capacity leading to overflow",
+              "is_correct": true,
+              "explanation": "An array-based stack has a fixed size defined at allocation. If the number of elements exceeds this size, a stack overflow occurs. Linked list implementations are dynamic and only limited by available system memory.",
+              "topic": "Stack Implementation via Arrays and Linked Lists"
+            },
+            {
+              "id": "q-4",
+              "question": "What is the postfix equivalent of the infix expression: A + (B * C) - (D / E)?",
+              "selected_option": "ABC*+DE/-",
+              "correct_option": "ABC*+DE/-",
+              "is_correct": true,
+              "explanation": "Following operator precedence: (B*C) becomes BC*, (D/E) becomes DE/. The expression becomes A + BC* - DE/. Finally, combining left to right: ABC*+DE/-.",
+              "topic": "Infix to Postfix Conversion & Expression Evaluation"
+            },
+            {
+              "id": "q-5",
+              "question": "When evaluating a postfix expression using a stack, what action is taken when an operand is encountered?",
+              "selected_option": "Pop two elements, perform operation, push result",
+              "correct_option": "Push the operand onto the stack",
+              "is_correct": false,
+              "explanation": "In postfix evaluation, operands are pushed onto the stack. When an operator is encountered, the required number of operands are popped, the operation is performed, and the result is pushed back onto the stack.",
+              "topic": "Infix to Postfix Conversion & Expression Evaluation"
+            },
+            {
+              "id": "q-6",
+              "question": "What is the space complexity of a stack implemented using a singly linked list containing 'n' elements?",
+              "selected_option": "O(n)",
+              "correct_option": "O(n)",
+              "is_correct": true,
+              "explanation": "Each element in a linked list requires a node containing the data and a pointer to the next node. For 'n' elements, this results in O(n) space complexity.",
+              "topic": "Stack Implementation via Arrays and Linked Lists"
+            },
+            {
+              "id": "q-7",
+              "question": "In a doubly linked list, what is the minimum number of pointer updates required to insert a new node between two existing nodes?",
+              "selected_option": "1",
+              "correct_option": "4",
+              "is_correct": false,
+              "explanation": "To insert a node, you must update: 1) New node's next, 2) New node's prev, 3) Predecessor's next, and 4) Successor's prev. Total of 4 pointer updates.",
+              "topic": "Doubly Linked List Pointer Operations"
+            },
+            {
+              "id": "q-8",
+              "question": "Which data structure is most suitable for implementing the 'undo' functionality in a text editor?",
+              "selected_option": "Stack",
+              "correct_option": "Stack",
+              "is_correct": true,
+              "explanation": "The 'undo' feature follows the Last-In, First-Out (LIFO) principle, where the most recent operation is the first one to be reversed. This is the defining characteristic of a stack.",
+              "topic": "Stack Implementation via Arrays and Linked Lists"
+            },
+            {
+              "id": "q-9",
+              "question": "During infix to postfix conversion, why is the stack used to store operators?",
+              "selected_option": "To maintain operator precedence and associativity",
+              "correct_option": "To maintain operator precedence and associativity",
+              "is_correct": true,
+              "explanation": "The stack is used to hold operators because they must be output in an order that respects mathematical precedence (e.g., * before +) and associativity, which cannot be determined until the entire expression is scanned.",
+              "topic": "Infix to Postfix Conversion & Expression Evaluation"
+            },
+            {
+              "id": "q-10",
+              "question": "If you are at the middle node of a singly linked list of size 'n', what is the most efficient way to access the node immediately preceding it?",
+              "selected_option": "It is impossible without a doubly linked list",
+              "correct_option": "Traverse from the head",
+              "is_correct": false,
+              "explanation": "In a standard singly linked list, there is no 'prev' pointer. To find the node preceding the current one, you must start from the head and traverse until you reach the node whose 'next' points to your current node.",
+              "topic": "Singly Linked List Pointer Operations"
+            }
+          ]
+        },
+        "submittedAt": "Nov 6, 2026"
+      },
+      {
+        "id": "res-1793971205020",
+        "courseCode": "CS201",
+        "unitTitle": "Sorting and Searching",
+        "score": 10,
+        "totalScore": 100,
+        "percentage": 10,
+        "isCompleted": true,
+        "details": {
+          "score": 10,
+          "total_score": 100,
+          "percentage": 10,
+          "weak_topics": [
+            "Binary Search & Boundary Invariants",
+            "Quick Sort Partitioning and Worst-Case Avoidance",
+            "Merge Sort and Divide-and-Conquer Recurrence"
+          ],
+          "remediation_advice": "Focus targeted revision on: Binary Search & Boundary Invariants, Quick Sort Partitioning and Worst-Case Avoidance, Merge Sort and Divide-and-Conquer Recurrence. Ask your AI Tutor for step-by-step concept walkthroughs.",
+          "eval_details": [
+            {
+              "id": "q-1",
+              "question": "In a standard binary search on a sorted array of size n, what is the loop invariant that ensures the target element is within the search range [low, high]?",
+              "selected_option": "A[low] <= target <= A[high]",
+              "correct_option": "The target is either at index mid or in the sub-array where it must reside based on the sorted property",
+              "is_correct": false,
+              "explanation": "The binary search invariant maintains that if the target exists in the array, it must be within the current bounds [low, high]. Option 2 correctly describes the logic of narrowing the search space while preserving the existence of the target.",
+              "topic": "Binary Search & Boundary Invariants"
+            },
+            {
+              "id": "q-2",
+              "question": "What is the primary advantage of using a 'median-of-three' pivot selection strategy in Quick Sort?",
+              "selected_option": "It ensures the partition always splits the array into two equal halves",
+              "correct_option": "It helps avoid the O(n^2) worst-case scenario for already sorted or reverse-sorted arrays",
+              "is_correct": false,
+              "explanation": "Quick Sort hits O(n^2) when the pivot consistently results in highly unbalanced partitions. Median-of-three selects the median of the first, middle, and last elements, significantly reducing the likelihood of picking an extreme value as the pivot in sorted data.",
+              "topic": "Quick Sort Partitioning and Worst-Case Avoidance"
+            },
+            {
+              "id": "q-3",
+              "question": "Which of the following best describes the recurrence relation for Merge Sort?",
+              "selected_option": "T(n) = T(n/2) + O(n)",
+              "correct_option": "T(n) = 2T(n/2) + O(n)",
+              "is_correct": false,
+              "explanation": "Merge Sort divides the array into two sub-problems of size n/2 (2T(n/2)) and performs a merge step that takes linear time O(n) to combine the sorted sub-arrays, resulting in T(n) = 2T(n/2) + O(n).",
+              "topic": "Merge Sort and Divide-and-Conquer Recurrence"
+            },
+            {
+              "id": "q-4",
+              "question": "When performing binary search on an array of size 16, what is the maximum number of comparisons required to find an element or determine it is absent?",
+              "selected_option": "4",
+              "correct_option": "5",
+              "is_correct": false,
+              "explanation": "The number of comparisons in binary search is floor(log2(n)) + 1. For n=16, log2(16) = 4, so 4+1 = 5 comparisons are required in the worst case.",
+              "topic": "Binary Search & Boundary Invariants"
+            },
+            {
+              "id": "q-5",
+              "question": "In the context of the Hoare partition scheme used in Quick Sort, what is the final position of the pivot after the partitioning step is complete?",
+              "selected_option": "The pivot is placed such that all elements to its left are <= and all to its right are >=",
+              "correct_option": "The pivot is placed such that all elements to its left are <= and all to its right are >=",
+              "is_correct": true,
+              "explanation": "The goal of any partition scheme is to place the pivot in its final sorted position, where all elements to the left are smaller or equal and all elements to the right are greater or equal.",
+              "topic": "Quick Sort Partitioning and Worst-Case Avoidance"
+            },
+            {
+              "id": "q-6",
+              "question": "Why is Merge Sort considered a 'stable' sorting algorithm?",
+              "selected_option": "It is faster than Quick Sort for small arrays",
+              "correct_option": "It preserves the relative order of equal elements",
+              "is_correct": false,
+              "explanation": "Merge Sort is stable because during the merge step, when comparing elements from the left and right sub-arrays, we prioritize the element from the left sub-array if the values are equal, thus maintaining their original relative order.",
+              "topic": "Merge Sort and Divide-and-Conquer Recurrence"
+            },
+            {
+              "id": "q-7",
+              "question": "What is the worst-case time complexity of Quick Sort when the pivot is consistently the smallest or largest element?",
+              "selected_option": "O(n log n)",
+              "correct_option": "O(n^2)",
+              "is_correct": false,
+              "explanation": "If the partition is always unbalanced (1 and n-1), the recursion tree has a depth of n, and at each level, we perform O(n) work, leading to O(n^2) total time.",
+              "topic": "Quick Sort Partitioning and Worst-Case Avoidance"
+            },
+            {
+              "id": "q-8",
+              "question": "Which of the following is a key requirement for the Binary Search algorithm to function correctly?",
+              "selected_option": "The array must be stored in a linked list",
+              "correct_option": "The array must be sorted",
+              "is_correct": false,
+              "explanation": "Binary search relies on the property that the array is sorted, allowing the algorithm to determine if the target is in the left or right half by comparing it to the middle element.",
+              "topic": "Binary Search & Boundary Invariants"
+            },
+            {
+              "id": "q-9",
+              "question": "Using the Master Theorem for the recurrence T(n) = 2T(n/2) + O(n), what is the Big-O complexity?",
+              "selected_option": "O(n^2)",
+              "correct_option": "O(n log n)",
+              "is_correct": false,
+              "explanation": "Here, a=2, b=2, and f(n)=n. Since n^(log_b a) = n^1 = n, we fall into Case 2 of the Master Theorem, which results in T(n) = O(n^log_b a * log n) = O(n log n).",
+              "topic": "Merge Sort and Divide-and-Conquer Recurrence"
+            },
+            {
+              "id": "q-10",
+              "question": "Which strategy is most effective at avoiding the O(n^2) worst-case for Quick Sort on already sorted arrays?",
+              "selected_option": "Always picking the first element as the pivot",
+              "correct_option": "Using a randomized pivot selection",
+              "is_correct": false,
+              "explanation": "Randomized pivot selection ensures that the probability of choosing a 'bad' pivot (one that leads to O(n^2)) is extremely low regardless of the input distribution, effectively avoiding the worst-case for sorted data.",
+              "topic": "Quick Sort Partitioning and Worst-Case Avoidance"
+            }
+          ]
+        },
+        "submittedAt": "Nov 6, 2026"
+      },
+      {
+        "id": "res-1793951516270",
+        "courseCode": "CS201",
+        "score": 0,
+        "totalScore": 50,
+        "percentage": 0,
+        "details": {
+          "score": 0,
+          "total_score": 50,
+          "percentage": 0,
+          "weak_topics": [
+            "Worst, Average, and Amortized Time Complexity",
+            "Infix to Postfix Conversion & Expression Evaluation",
+            "Binary Search Tree (BST) Insertion and Deletion",
+            "Adjacency Matrix vs Adjacency List Representations",
+            "AVL Trees and Self-Balancing Rotations"
+          ],
+          "remediation_advice": "Focus targeted revision on: Worst, Average, and Amortized Time Complexity, Infix to Postfix Conversion & Expression Evaluation, Binary Search Tree (BST) Insertion and Deletion, Adjacency Matrix vs Adjacency List Representations, AVL Trees and Self-Balancing Rotations. Ask your AI Tutor for step-by-step concept walkthroughs.",
+          "eval_details": [
+            {
+              "id": "q-1",
+              "question": "Which of the following best describes the amortized time complexity of a sequence of n operations on a dynamic array that doubles its capacity when full?",
+              "selected_option": "O(n)",
+              "correct_option": "O(1)",
+              "is_correct": false,
+              "explanation": "While a single insertion might take O(n) time during a resize, the total cost of n insertions is O(n). Dividing the total cost by n operations yields an amortized complexity of O(1).",
+              "topic": "Worst, Average, and Amortized Time Complexity"
+            },
+            {
+              "id": "q-2",
+              "question": "When converting the infix expression 'A + B * C' to postfix notation, what is the correct result?",
+              "selected_option": "ABC+*",
+              "correct_option": "ABC*+",
+              "is_correct": false,
+              "explanation": "According to operator precedence, B * C is evaluated first (BC*), then A is added to the result, yielding ABC*+. The other options violate precedence or operand order.",
+              "topic": "Infix to Postfix Conversion & Expression Evaluation"
+            },
+            {
+              "id": "q-3",
+              "question": "In a Binary Search Tree (BST), what is the primary structural requirement for the node to be deleted if it has two children?",
+              "selected_option": "Delete the node and leave a null pointer",
+              "correct_option": "Replace it with its in-order successor or predecessor",
+              "is_correct": false,
+              "explanation": "To maintain the BST property, replacing a node with two children requires finding the in-order successor (smallest in the right subtree) or predecessor (largest in the left subtree) to take its place.",
+              "topic": "Binary Search Tree (BST) Insertion and Deletion"
+            },
+            {
+              "id": "q-4",
+              "question": "Which graph representation is most space-efficient for a sparse graph with V vertices and E edges where E << V^2?",
+              "selected_option": "Edge List with constant size",
+              "correct_option": "Adjacency List",
+              "is_correct": false,
+              "explanation": "An Adjacency Matrix requires O(V^2) space regardless of edges. An Adjacency List requires O(V + E) space, which is significantly smaller for sparse graphs.",
+              "topic": "Adjacency Matrix vs Adjacency List Representations"
+            },
+            {
+              "id": "q-5",
+              "question": "In the context of AVL trees, what is the maximum height of an AVL tree with n nodes?",
+              "selected_option": "O(sqrt(n))",
+              "correct_option": "O(log n)",
+              "is_correct": false,
+              "explanation": "AVL trees maintain a balance factor of at most 1, ensuring the height is logarithmic relative to the number of nodes, specifically h < 1.44 log2(n + 2) - 0.328.",
+              "topic": "AVL Trees and Self-Balancing Rotations"
+            }
+          ]
+        },
+        "submittedAt": "Nov 6, 2026"
+      },
+      {
+        "id": "res-1793941524734",
+        "courseCode": "CS201",
+        "score": 0,
+        "totalScore": 50,
+        "percentage": 0,
+        "details": {
+          "score": 0,
+          "total_score": 50,
+          "percentage": 0,
+          "weak_topics": [
+            "Worst, Average, and Amortized Time Complexity",
+            "Infix to Postfix Conversion & Expression Evaluation",
+            "Adjacency Matrix vs Adjacency List Representations",
+            "AVL Trees and Self-Balancing Rotations",
+            "Merge Sort and Divide-and-Conquer Recurrence"
+          ],
+          "remediation_advice": "Focus targeted revision on: Worst, Average, and Amortized Time Complexity, Infix to Postfix Conversion & Expression Evaluation, Adjacency Matrix vs Adjacency List Representations, AVL Trees and Self-Balancing Rotations, Merge Sort and Divide-and-Conquer Recurrence. Ask your AI Tutor for step-by-step concept walkthroughs.",
+          "eval_details": [
+            {
+              "id": "q-1",
+              "question": "Which of the following best describes the amortized time complexity of a sequence of n operations on a dynamic array that doubles its capacity when full?",
+              "selected_option": "O(n)",
+              "correct_option": "O(1)",
+              "is_correct": false,
+              "explanation": "While a single insertion might trigger a resize (O(n)), these expensive operations occur infrequently. Over n operations, the total cost is O(n), resulting in an amortized cost of O(1) per operation.",
+              "topic": "Worst, Average, and Amortized Time Complexity"
+            },
+            {
+              "id": "q-2",
+              "question": "When converting the infix expression 'A + B * C' to postfix notation, what is the correct result?",
+              "selected_option": "AB+C*",
+              "correct_option": "ABC*+",
+              "is_correct": false,
+              "explanation": "Due to operator precedence, B and C are multiplied first (BC*), then A is added to the result, yielding ABC*+.",
+              "topic": "Infix to Postfix Conversion & Expression Evaluation"
+            },
+            {
+              "id": "q-3",
+              "question": "What is the primary advantage of using an Adjacency List over an Adjacency Matrix for representing a sparse graph with V vertices and E edges?",
+              "selected_option": "Guaranteed O(V^2) traversal time",
+              "correct_option": "Space complexity of O(V + E)",
+              "is_correct": false,
+              "explanation": "An Adjacency Matrix always requires O(V^2) space regardless of the number of edges. An Adjacency List uses O(V + E) space, which is significantly more efficient for sparse graphs.",
+              "topic": "Adjacency Matrix vs Adjacency List Representations"
+            },
+            {
+              "id": "q-4",
+              "question": "In an AVL tree, what is the specific purpose of performing a 'Left-Right' (LR) rotation?",
+              "selected_option": "To balance a node when the right child is heavy",
+              "correct_option": "To fix a violation where the left child's right subtree is too deep",
+              "is_correct": false,
+              "explanation": "An LR rotation is a double rotation used when a node's left child has a right-heavy subtree, causing a balance factor violation. It restores the AVL property by reordering the nodes.",
+              "topic": "AVL Trees and Self-Balancing Rotations"
+            },
+            {
+              "id": "q-5",
+              "question": "Given the recurrence relation T(n) = 2T(n/2) + O(n) for Merge Sort, what is the tightest asymptotic upper bound using the Master Theorem?",
+              "selected_option": "O(log n)",
+              "correct_option": "O(n log n)",
+              "is_correct": false,
+              "explanation": "According to the Master Theorem (Case 2), where a=2, b=2, and f(n)=n, since n^(log_b a) = n^1 = f(n), the complexity is O(n^(log_b a) * log n), which simplifies to O(n log n).",
+              "topic": "Merge Sort and Divide-and-Conquer Recurrence"
+            }
+          ]
+        },
+        "submittedAt": "Nov 6, 2026"
+      }
+    ]
+  },
+  "studentStudyPlans": {
+    "student-1": {
+      "total_study_days": 48,
+      "daily_hours": 2.5,
+      "semester_start": "2026-11-06",
+      "semester_end": "2026-12-24",
+      "exam_date": "2026-12-24",
+      "total_topics_covered": 40,
+      "total_tasks": 48,
+      "phases": {
+        "study_days": 34,
+        "revision_sessions": 7,
+        "buffer_days": 6,
+        "mock_tests": 1
+      },
+      "tasks": [
+        {
+          "id": "task-top-301-2-3-1",
+          "topic_id": "top-301-2-3",
+          "date": "Day 1 (Fri, Nov 6)",
+          "day_number": 1,
+          "type": "study",
+          "title": "CS301: CPU Scheduling Algorithms: FCFS, SJF, Round Robin & Priority Scheduling",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 2: Process Management & CPU Scheduling",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-3-2-2",
+          "topic_id": "top-301-3-2",
+          "date": "Day 2 (Sat, Nov 7)",
+          "day_number": 2,
+          "type": "study",
+          "title": "CS301: Counting & Binary Semaphores, Mutex Locks and Monitors",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 3: Process Synchronization & Deadlocks",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-3-3-3",
+          "topic_id": "top-301-3-3",
+          "date": "Day 3 (Sun, Nov 8)",
+          "day_number": 3,
+          "type": "study",
+          "title": "CS301: Classical IPC Problems: Producer-Consumer, Dining Philosophers & Readers-Writers",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 3: Process Synchronization & Deadlocks",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-3-4-4",
+          "topic_id": "top-301-3-4",
+          "date": "Day 4 (Mon, Nov 9)",
+          "day_number": 4,
+          "type": "study",
+          "title": "CS301: Deadlock Characterization, Prevention & Banker's Avoidance Algorithm",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 3: Process Synchronization & Deadlocks",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-4-2-5",
+          "topic_id": "top-301-4-2",
+          "date": "Day 5 (Tue, Nov 10)",
+          "day_number": 5,
+          "type": "study",
+          "title": "CS301: Paging Architecture, Translation Lookaside Buffer (TLB) & Page Tables",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 4: Main Memory & Virtual Memory Management",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-6-1793940648533",
+          "date": "Day 6 (Wed, Nov 11)",
+          "day_number": 6,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS201)",
+          "course_name": "Data Structures and Algorithms",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-7-1793940648533",
+          "date": "Day 7 (Thu, Nov 12)",
+          "day_number": 7,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-4-4-8",
+          "topic_id": "top-301-4-4",
+          "date": "Day 8 (Fri, Nov 13)",
+          "day_number": 8,
+          "type": "study",
+          "title": "CS301: Page Replacement Algorithms (FIFO, Optimal, LRU) & Thrashing Invariants",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 4: Main Memory & Virtual Memory Management",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-1-3-9",
+          "topic_id": "top-1-3",
+          "date": "Day 9 (Sat, Nov 14)",
+          "day_number": 9,
+          "type": "study",
+          "title": "CS201: Worst, Average, and Amortized Time Complexity",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 1: Introduction to Data Structures",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-2-3-10",
+          "topic_id": "top-2-3",
+          "date": "Day 10 (Sun, Nov 15)",
+          "day_number": 10,
+          "type": "study",
+          "title": "CS201: Infix to Postfix Conversion & Expression Evaluation",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 2: Arrays, Linked Lists and Stacks",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-3-3-11",
+          "topic_id": "top-3-3",
+          "date": "Day 11 (Mon, Nov 16)",
+          "day_number": 11,
+          "type": "study",
+          "title": "CS201: AVL Trees and Self-Balancing Rotations",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 3: Queues and Trees",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-12-1793940648534",
+          "date": "Day 12 (Tue, Nov 17)",
+          "day_number": 12,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS202)",
+          "course_name": "Database Management Systems",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-4-3-13",
+          "topic_id": "top-4-3",
+          "date": "Day 13 (Wed, Nov 18)",
+          "day_number": 13,
+          "type": "study",
+          "title": "CS201: Dijkstra Shortest Path and Greedy Invariants",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 4: Graphs and Graph Algorithms",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-14-1793940648535",
+          "date": "Day 14 (Thu, Nov 19)",
+          "day_number": 14,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-5-3-15",
+          "topic_id": "top-5-3",
+          "date": "Day 15 (Fri, Nov 20)",
+          "day_number": 15,
+          "type": "study",
+          "title": "CS201: Quick Sort Partitioning and Worst-Case Avoidance",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 5: Sorting and Searching",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-3-2-16",
+          "topic_id": "top-202-3-2",
+          "date": "Day 16 (Sat, Nov 21)",
+          "day_number": 16,
+          "type": "study",
+          "title": "CS202: Normalization to 3NF and BCNF Decompositions",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 3: Relational Database Normalization",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-4-2-17",
+          "topic_id": "top-202-4-2",
+          "date": "Day 17 (Sun, Nov 22)",
+          "day_number": 17,
+          "type": "study",
+          "title": "CS202: Concurrency Control and Strict Two-Phase Locking",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 4: Transaction Processing & ACID Properties",
+          "difficulty": "Hard",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-18-1793940648536",
+          "date": "Day 18 (Mon, Nov 23)",
+          "day_number": 18,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS489)",
+          "course_name": "Computer Networks and Protocols",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-1-2-19",
+          "topic_id": "top-301-1-2",
+          "date": "Day 19 (Tue, Nov 24)",
+          "day_number": 19,
+          "type": "study",
+          "title": "CS301: System Calls, Parameter Passing & API Execution Pipelines",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 1: Operating System Structures & System Calls",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-1-3-20",
+          "topic_id": "top-301-1-3",
+          "date": "Day 20 (Wed, Nov 25)",
+          "day_number": 20,
+          "type": "study",
+          "title": "CS301: Monolithic, Layered, Microkernel & Modular OS Architectures",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 1: Operating System Structures & System Calls",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-21-1793940648538",
+          "date": "Day 21 (Thu, Nov 26)",
+          "day_number": 21,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-2-1-22",
+          "topic_id": "top-301-2-1",
+          "date": "Day 22 (Fri, Nov 27)",
+          "day_number": 22,
+          "type": "study",
+          "title": "CS301: Process Control Block (PCB), Process State Transitions & Context Switching",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 2: Process Management & CPU Scheduling",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-2-2-23",
+          "topic_id": "top-301-2-2",
+          "date": "Day 23 (Sat, Nov 28)",
+          "day_number": 23,
+          "type": "study",
+          "title": "CS301: Threads, Multithreading Models & Kernel vs User-Level Threads",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 2: Process Management & CPU Scheduling",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-24-1793940648538",
+          "date": "Day 24 (Sun, Nov 29)",
+          "day_number": 24,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS203)",
+          "course_name": "Object-Oriented Programming",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-3-1-25",
+          "topic_id": "top-301-3-1",
+          "date": "Day 25 (Mon, Nov 30)",
+          "day_number": 25,
+          "type": "study",
+          "title": "CS301: Critical Section Problem, Race Conditions & Peterson's Solution",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 3: Process Synchronization & Deadlocks",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-4-1-26",
+          "topic_id": "top-301-4-1",
+          "date": "Day 26 (Tue, Dec 1)",
+          "day_number": 26,
+          "type": "study",
+          "title": "CS301: Logical vs Physical Address Spaces, MMU & Contiguous Memory Allocation",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 4: Main Memory & Virtual Memory Management",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-4-3-27",
+          "topic_id": "top-301-4-3",
+          "date": "Day 27 (Wed, Dec 2)",
+          "day_number": 27,
+          "type": "study",
+          "title": "CS301: Virtual Memory, Demand Paging & Page Fault Servicing",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 4: Main Memory & Virtual Memory Management",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-28-1793940648539",
+          "date": "Day 28 (Thu, Dec 3)",
+          "day_number": 28,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-5-2-29",
+          "topic_id": "top-301-5-2",
+          "date": "Day 29 (Fri, Dec 4)",
+          "day_number": 29,
+          "type": "study",
+          "title": "CS301: File System Allocation Methods: Contiguous, Linked & Indexed Allocation",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 5: Storage Management & File Systems",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-30-1793940648540",
+          "date": "Day 30 (Sat, Dec 5)",
+          "day_number": 30,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS204)",
+          "course_name": "Computer Organization and Architecture",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-5-3-31",
+          "topic_id": "top-301-5-3",
+          "date": "Day 31 (Sun, Dec 6)",
+          "day_number": 31,
+          "type": "study",
+          "title": "CS301: Disk Scheduling Algorithms: FCFS, SSTF, SCAN, C-SCAN & RAID Architectures",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 5: Storage Management & File Systems",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-2-1-32",
+          "topic_id": "top-2-1",
+          "date": "Day 32 (Mon, Dec 7)",
+          "day_number": 32,
+          "type": "study",
+          "title": "CS201: Singly & Doubly Linked List Pointer Operations",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 2: Arrays, Linked Lists and Stacks",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-2-2-33",
+          "topic_id": "top-2-2",
+          "date": "Day 33 (Tue, Dec 8)",
+          "day_number": 33,
+          "type": "study",
+          "title": "CS201: Stack Implementation via Arrays and Linked Lists",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 2: Arrays, Linked Lists and Stacks",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-3-1-34",
+          "topic_id": "top-3-1",
+          "date": "Day 34 (Wed, Dec 9)",
+          "day_number": 34,
+          "type": "study",
+          "title": "CS201: Circular Queues and Priority Queues",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 3: Queues and Trees",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-35-1793940648541",
+          "date": "Day 35 (Thu, Dec 10)",
+          "day_number": 35,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-36-1793940648541",
+          "date": "Day 36 (Fri, Dec 11)",
+          "day_number": 36,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS301)",
+          "course_name": "Operating Systems",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-3-2-37",
+          "topic_id": "top-3-2",
+          "date": "Day 37 (Sat, Dec 12)",
+          "day_number": 37,
+          "type": "study",
+          "title": "CS201: Binary Search Tree (BST) Insertion and Deletion",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 3: Queues and Trees",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-4-2-38",
+          "topic_id": "top-4-2",
+          "date": "Day 38 (Sun, Dec 13)",
+          "day_number": 38,
+          "type": "study",
+          "title": "CS201: Breadth-First Search (BFS) and Depth-First Search (DFS)",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 4: Graphs and Graph Algorithms",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-5-2-39",
+          "topic_id": "top-5-2",
+          "date": "Day 39 (Mon, Dec 14)",
+          "day_number": 39,
+          "type": "study",
+          "title": "CS201: Merge Sort and Divide-and-Conquer Recurrence",
+          "course_name": "Data Structures and Algorithms",
+          "unit_title": "Unit 5: Sorting and Searching",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-1-2-40",
+          "topic_id": "top-202-1-2",
+          "date": "Day 40 (Tue, Dec 15)",
+          "day_number": 40,
+          "type": "study",
+          "title": "CS202: Entity-Relationship (ER) Modeling",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 1: Introduction and Conceptual Modeling",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-2-1-41",
+          "topic_id": "top-202-2-1",
+          "date": "Day 41 (Wed, Dec 16)",
+          "day_number": 41,
+          "type": "study",
+          "title": "CS202: Relational Algebra Operators and Selection",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 2: Relational Model and SQL",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-42-1793940648542",
+          "date": "Day 42 (Thu, Dec 17)",
+          "day_number": 42,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-2-2-43",
+          "topic_id": "top-202-2-2",
+          "date": "Day 43 (Fri, Dec 18)",
+          "day_number": 43,
+          "type": "study",
+          "title": "CS202: Advanced SQL Joins and Aggregation",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 2: Relational Model and SQL",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-3-1-44",
+          "topic_id": "top-202-3-1",
+          "date": "Day 44 (Sat, Dec 19)",
+          "day_number": 44,
+          "type": "study",
+          "title": "CS202: Functional Dependencies and Attribute Closures",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 3: Relational Database Normalization",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-202-4-1-45",
+          "topic_id": "top-202-4-1",
+          "date": "Day 45 (Sun, Dec 20)",
+          "day_number": 45,
+          "type": "study",
+          "title": "CS202: ACID Properties and Transaction Lifecycle",
+          "course_name": "Database Management Systems",
+          "unit_title": "Unit 4: Transaction Processing & ACID Properties",
+          "difficulty": "Medium",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-mock-46-1793940648544",
+          "date": "Day 46 (Mon, Dec 21)",
+          "day_number": 46,
+          "type": "mock_test",
+          "title": "Comprehensive Diagnostic Mock Exam #1",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-301-1-1-47",
+          "topic_id": "top-301-1-1",
+          "date": "Day 47 (Tue, Dec 22)",
+          "day_number": 47,
+          "type": "study",
+          "title": "CS301: OS Services, Dual-Mode Operation (User/Kernel) & Trap Mechanisms",
+          "course_name": "Operating Systems",
+          "unit_title": "Unit 1: Operating System Structures & System Calls",
+          "difficulty": "Easy",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-48-1793940648544",
+          "date": "Day 48 (Wed, Dec 23)",
+          "day_number": 48,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS101)",
+          "course_name": "Introduction to Programming with Python",
+          "duration_hours": 2.5,
+          "status": "pending",
+          "is_completed": false
+        }
+      ]
+    },
+    "student-1793911629721": {
+      "total_study_days": 7,
+      "daily_hours": 3,
+      "semester_start": "2026-11-05",
+      "semester_end": "2026-06-15",
+      "exam_date": "2026-06-15",
+      "total_topics_covered": 30,
+      "total_tasks": 7,
+      "phases": {
+        "study_days": 4,
+        "revision_sessions": 1,
+        "buffer_days": 1,
+        "mock_tests": 1
+      },
+      "tasks": [
+        {
+          "id": "task-top-203-2-3-1",
+          "topic_id": "top-203-2-3",
+          "date": "Day 1 (Fri, Nov 6)",
+          "day_number": 1,
+          "type": "study",
+          "title": "CS203: Abstract Base Classes, Pure Virtual Contracts & Sealed Types",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 2: Inheritance, Subtyping & Dynamic Polymorphism",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-4-3-2",
+          "topic_id": "top-203-4-3",
+          "date": "Day 2 (Sat, Nov 7)",
+          "day_number": 2,
+          "type": "study",
+          "title": "CS203: Byte and Character Streams, File I/O & Object Serialization",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 4: Exception Handling, Stream I/O & File Processing",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-5-1-3",
+          "topic_id": "top-203-5-1",
+          "date": "Day 3 (Sun, Nov 8)",
+          "day_number": 3,
+          "type": "study",
+          "title": "CS203: Generic Classes, Type Parameters & Invariance Guarantees",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 5: Generics, Collections Framework & Concurrency Basics",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-5-3-4",
+          "topic_id": "top-203-5-3",
+          "date": "Day 4 (Mon, Nov 9)",
+          "day_number": 4,
+          "type": "study",
+          "title": "CS203: Multi-threading Foundations: Thread Lifecycle & Synchronization Locks",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 5: Generics, Collections Framework & Concurrency Basics",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-mock-5-1793911631836",
+          "date": "Day 5 (Tue, Nov 10)",
+          "day_number": 5,
+          "type": "mock_test",
+          "title": "Comprehensive Diagnostic Mock Exam #1",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-6-1793911631836",
+          "date": "Day 6 (Wed, Nov 11)",
+          "day_number": 6,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS201)",
+          "course_name": "Data Structures and Algorithms",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-7-1793911631837",
+          "date": "Day 7 (Thu, Nov 12)",
+          "day_number": 7,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        }
+      ]
+    },
+    "student-1793931311171": {
+      "total_study_days": 7,
+      "daily_hours": 3,
+      "semester_start": "2026-11-06",
+      "semester_end": "2026-06-15",
+      "exam_date": "2026-06-15",
+      "total_topics_covered": 30,
+      "total_tasks": 7,
+      "phases": {
+        "study_days": 4,
+        "revision_sessions": 1,
+        "buffer_days": 1,
+        "mock_tests": 1
+      },
+      "tasks": [
+        {
+          "id": "task-top-203-2-3-1",
+          "topic_id": "top-203-2-3",
+          "date": "Day 1 (Fri, Nov 6)",
+          "day_number": 1,
+          "type": "study",
+          "title": "CS203: Abstract Base Classes, Pure Virtual Contracts & Sealed Types",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 2: Inheritance, Subtyping & Dynamic Polymorphism",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-4-3-2",
+          "topic_id": "top-203-4-3",
+          "date": "Day 2 (Sat, Nov 7)",
+          "day_number": 2,
+          "type": "study",
+          "title": "CS203: Byte and Character Streams, File I/O & Object Serialization",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 4: Exception Handling, Stream I/O & File Processing",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-5-1-3",
+          "topic_id": "top-203-5-1",
+          "date": "Day 3 (Sun, Nov 8)",
+          "day_number": 3,
+          "type": "study",
+          "title": "CS203: Generic Classes, Type Parameters & Invariance Guarantees",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 5: Generics, Collections Framework & Concurrency Basics",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-5-3-4",
+          "topic_id": "top-203-5-3",
+          "date": "Day 4 (Mon, Nov 9)",
+          "day_number": 4,
+          "type": "study",
+          "title": "CS203: Multi-threading Foundations: Thread Lifecycle & Synchronization Locks",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 5: Generics, Collections Framework & Concurrency Basics",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-mock-5-1793931313288",
+          "date": "Day 5 (Tue, Nov 10)",
+          "day_number": 5,
+          "type": "mock_test",
+          "title": "Comprehensive Diagnostic Mock Exam #1",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-6-1793931313288",
+          "date": "Day 6 (Wed, Nov 11)",
+          "day_number": 6,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS201)",
+          "course_name": "Data Structures and Algorithms",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-7-1793931313288",
+          "date": "Day 7 (Thu, Nov 12)",
+          "day_number": 7,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        }
+      ]
+    },
+    "student-1793933492594": {
+      "total_study_days": 7,
+      "daily_hours": 3,
+      "semester_start": "2026-11-06",
+      "semester_end": "2026-06-15",
+      "exam_date": "2026-06-15",
+      "total_topics_covered": 30,
+      "total_tasks": 7,
+      "phases": {
+        "study_days": 4,
+        "revision_sessions": 1,
+        "buffer_days": 1,
+        "mock_tests": 1
+      },
+      "tasks": [
+        {
+          "id": "task-top-203-2-3-1",
+          "topic_id": "top-203-2-3",
+          "date": "Day 1 (Fri, Nov 6)",
+          "day_number": 1,
+          "type": "study",
+          "title": "CS203: Abstract Base Classes, Pure Virtual Contracts & Sealed Types",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 2: Inheritance, Subtyping & Dynamic Polymorphism",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-4-3-2",
+          "topic_id": "top-203-4-3",
+          "date": "Day 2 (Sat, Nov 7)",
+          "day_number": 2,
+          "type": "study",
+          "title": "CS203: Byte and Character Streams, File I/O & Object Serialization",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 4: Exception Handling, Stream I/O & File Processing",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-5-1-3",
+          "topic_id": "top-203-5-1",
+          "date": "Day 3 (Sun, Nov 8)",
+          "day_number": 3,
+          "type": "study",
+          "title": "CS203: Generic Classes, Type Parameters & Invariance Guarantees",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 5: Generics, Collections Framework & Concurrency Basics",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-top-203-5-3-4",
+          "topic_id": "top-203-5-3",
+          "date": "Day 4 (Mon, Nov 9)",
+          "day_number": 4,
+          "type": "study",
+          "title": "CS203: Multi-threading Foundations: Thread Lifecycle & Synchronization Locks",
+          "course_name": "Object-Oriented Programming",
+          "unit_title": "Unit 5: Generics, Collections Framework & Concurrency Basics",
+          "difficulty": "Hard",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-mock-5-1793933494726",
+          "date": "Day 5 (Tue, Nov 10)",
+          "day_number": 5,
+          "type": "mock_test",
+          "title": "Comprehensive Diagnostic Mock Exam #1",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-rev-6-1793933494726",
+          "date": "Day 6 (Wed, Nov 11)",
+          "day_number": 6,
+          "type": "revision",
+          "title": "Syllabus Consolidation & Formula Flashcards (CS201)",
+          "course_name": "Data Structures and Algorithms",
+          "duration_hours": 3,
+          "status": "pending",
+          "is_completed": false
+        },
+        {
+          "id": "task-buf-7-1793933494726",
+          "date": "Day 7 (Thu, Nov 12)",
+          "day_number": 7,
+          "type": "buffer",
+          "title": "Adaptive Buffer Day (Catch-up / Cognitive Rest & Consolidation)",
+          "course_name": "All Enrolled Courses",
+          "duration_hours": 2,
+          "status": "pending",
+          "is_completed": false
+        }
+      ]
+    }
+  },
+  "studentChatHistories": {
+    "student-1": {
+      "course-cs101:unit-101-2": [
+        {
+          "id": "msg-test-2-u",
+          "role": "user",
+          "content": "How do Python list comprehensions work?",
+          "timestamp": "10:05 AM"
+        },
+        {
+          "id": "msg-test-2-a",
+          "role": "assistant",
+          "content": "List comprehensions offer a concise syntax to create lists based on existing iterables.",
+          "timestamp": "10:06 AM"
+        }
+      ],
+      "course-cs201:unit-5": [
+        {
+          "id": "msg-test-dsa-u",
+          "role": "user",
+          "content": "Explain worst-case time complexity of quicksort.",
+          "timestamp": "10:15 AM"
+        }
+      ],
+      "course-cs201:all": [
+        {
+          "id": "msg-u-1793933787297-0iheg",
+          "role": "user",
+          "content": "Explain avl trees",
+          "timestamp": "08:26 am"
+        },
+        {
+          "id": "msg-a-1793933797395-7cvi2",
+          "role": "assistant",
+          "content": "Hello! As your EDUAGENT for CS201, I am happy to explain **AVL Trees**.\n\n### 1. Definition\nAn **AVL Tree** (named after inventors Adelson-Velsky and Landis) is a **self-balancing Binary Search Tree (BST)**. In a standard BST, the tree can become skewed (resembling a linked list) in the worst case, leading to $O(n)$ search time. An AVL tree maintains a height of $O(\\log n)$ by ensuring the tree remains balanced after every insertion and deletion.\n\n### 2. The Balance Factor (BF)\nThe core invariant of an AVL tree is the **Balance Factor**. For every node in the tree, the following condition must hold:\n$$\\text{Balance Factor (BF)} = \\text{Height(Left Subtree)} - \\text{Height(Right Subtree)}$$\n**Invariant:** $BF \\in \\{-1, 0, 1\\}$\n\nIf the BF of any node becomes $2$ or $-2$, the tree is considered unbalanced and requires a rotation.\n\n---\n\n### 3. Rotations\nWhen an insertion or deletion causes a node to have a BF of $\\pm 2$, we perform rotations to restore balance. There are four primary cases:\n\n#### A. Left-Left (LL) Case\n*   **Scenario:** A node becomes unbalanced due to an insertion in the left child's left subtree.\n*   **Fix:** Perform a **Single Right Rotation** on the unbalanced node.\n\n#### B. Right-Right (RR) Case\n*   **Scenario:** A node becomes unbalanced due to an insertion in the right child's right subtree.\n*   **Fix:** Perform a **Single Left Rotation** on the unbalanced node.\n\n#### C. Left-Right (LR) Case\n*   **Scenario:** Insertion in the left child's right subtree.\n*   **Fix:** Perform a **Left Rotation** on the left child, followed by a **Right Rotation** on the unbalanced node.\n\n#### D. Right-Left (RL) Case\n*   **Scenario:** Insertion in the right child's left subtree.\n*   **Fix:** Perform a **Right Rotation** on the right child, followed by a **Left Rotation** on the unbalanced node.\n\n---\n\n### 4. Complexity Analysis\nBecause the AVL tree maintains a height of $O(\\log n)$, all primary operations are highly efficient:\n\n| Operation | Time Complexity |\n| :--- | :--- |\n| **Search** | $O(\\log n)$ |\n| **Insertion** | $O(\\log n)$ |\n| **Deletion** | $O(\\log n)$ |\n\n*Note: While insertion/deletion is $O(\\log n)$, the constant factor is higher than a standard BST due to the overhead of calculating heights and performing rotations.*\n\n---\n\n### 5. Conceptual Diagram (LL Rotation Example)\nIf we have a tree where node `C` is unbalanced:\n\n**Before Rotation (LL Case):**\n```text\n      C (BF=2)\n     /\n    B (BF=1)\n   /\n  A\n```\n**After Right Rotation:**\n```text\n    B\n   / \\\n  A   C\n```\n\n### Study Tip for CS201:\nWhen practicing AVL trees, always remember to **update the height of the nodes** after a rotation. A common mistake in exams is forgetting that the height of a node is `1 + max(height(left), height(right))`.\n\nDo you have a specific insertion sequence you would like to walk through, or would you like to compare AVL trees with another self-balancing structure like Red-Black trees?",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"Explain avl trees\"",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing specialized workflow with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance to student workspace.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "timestamp": "08:26 am"
+        },
+        {
+          "id": "msg-u-1793940514911-biktp",
+          "role": "user",
+          "content": "Explain radix sort",
+          "timestamp": "10:18 am"
+        },
+        {
+          "id": "msg-a-1793940524580-adsch",
+          "role": "assistant",
+          "content": "Hello! As your EDUAGENT for CS201, I am happy to clarify **Radix Sort**.\n\nWhile Radix Sort is not explicitly listed in your core syllabus (which focuses on Merge Sort and Quick Sort), it is a fundamental **non-comparative sorting algorithm** that provides an excellent case study in how we can achieve linear time complexity by exploiting the properties of the data itself.\n\n### 1. Conceptual Overview\nUnlike Merge Sort or Quick Sort, which rely on comparing elements (and are thus bounded by the $\\Omega(n \\log n)$ lower bound), Radix Sort processes the individual digits or bits of the numbers. It sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value.\n\n### 2. The Mechanism: LSD vs. MSD\nRadix Sort typically uses a **Stable Sort** (like Counting Sort) as a subroutine to sort the digits.\n\n*   **LSD (Least Significant Digit) Radix Sort:** Processes digits from the rightmost (ones place) to the leftmost. This is the most common implementation.\n*   **MSD (Most Significant Digit) Radix Sort:** Processes from the leftmost digit. This often requires recursion and is more complex to implement.\n\n### 3. Step-by-Step Example (LSD)\nSuppose we have the array: `[170, 045, 075, 090, 802, 024, 002, 066]`\n\n**Step 1: Sort by the 1s place**\n*   Buckets: 0:[170, 090], 2:[802, 002], 4:[024], 5:[045, 075], 6:[066]\n*   Result: `[170, 090, 802, 002, 024, 045, 075, 066]`\n\n**Step 2: Sort by the 10s place**\n*   Buckets: 0:[802, 002], 2:[024], 4:[045], 6:[066, 170], 7:[075], 9:[090]\n*   Result: `[802, 002, 024, 045, 066, 170, 075, 090]`\n\n**Step 3: Sort by the 100s place**\n*   Buckets: 0:[002, 024, 045, 066, 075, 090], 1:[170], 8:[802]\n*   Result: `[002, 024, 045, 066, 075, 090, 170, 802]` (Sorted)\n\n### 4. Complexity Analysis\n*   **Time Complexity:** $O(d \\cdot (n + b))$, where:\n    *   $n$ is the number of elements.\n    *   $d$ is the number of digits in the maximum number.\n    *   $b$ is the base of the number system (e.g., 10 for decimal).\n*   **Space Complexity:** $O(n + b)$ to store the buckets and the output array.\n\n### 5. Academic Comparison to Syllabus Topics\n*   **Vs. Merge Sort:** Merge Sort is a **Divide-and-Conquer** algorithm with a guaranteed $O(n \\log n)$ performance. Radix Sort is faster ($O(n)$) when $d$ is small, but it is not a \"general-purpose\" sort because it is restricted to data that can be represented as discrete digits or keys.\n*   **Stability:** Radix Sort **must** use a stable sorting algorithm (like Counting Sort) as its subroutine. If the subroutine were not stable, the relative order of elements sorted by previous digits would be lost, invalidating the algorithm.\n\n**Study Tip:** When preparing for your exams, remember that while Radix Sort is efficient, your syllabus emphasizes **Comparison-Based Sorting** (Merge/Quick). Ensure you can derive the $O(n \\log n)$ lower bound for comparison sorts, as that is a frequent examination topic.\n\nDo you have any questions regarding how the stability requirement affects the implementation?",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"Explain radix sort\"",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing specialized workflow with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance to student workspace.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "timestamp": "10:18 am"
+        },
+        {
+          "id": "msg-u-1793941649269-impu8",
+          "role": "user",
+          "content": "Help me understand \"Deadlocks & Banker's Algorithm\" from the syllabus.",
+          "timestamp": "10:37 am"
+        },
+        {
+          "id": "msg-a-1793941658711-pew6j",
+          "role": "assistant",
+          "content": "Hello! I am **EDUAGENT**. \n\nI must clarify a critical point regarding your CS201 syllabus: **Deadlocks and the Banker’s Algorithm are typically covered in an Operating Systems (CS301) course, not in Data Structures and Algorithms (CS201).** \n\nIn CS201, our focus remains on the efficiency of data organization and algorithmic logic. However, to ensure you are prepared for your broader computer science curriculum, I will provide a high-level conceptual overview of the Banker's Algorithm, as it relies heavily on the **2D Array (Matrix)** data structures we study in this course.\n\n---\n\n### The Banker’s Algorithm: Conceptual Overview\n\nThe Banker’s Algorithm is a resource allocation and deadlock avoidance strategy. It simulates a bank that never allocates resources in a way that would leave the system in an \"unsafe state.\"\n\n#### 1. The Data Structures Used\nTo implement this, we use several matrices and vectors (the bread and butter of CS201):\n*   **Available:** A vector of length $m$ (number of resource types) indicating the number of available resources.\n*   **Max:** An $n \\times m$ matrix defining the maximum demand of each process.\n*   **Allocation:** An $n \\times m$ matrix defining the number of resources currently allocated to each process.\n*   **Need:** An $n \\times m$ matrix where `Need[i][j] = Max[i][j] - Allocation[i][j]`.\n\n#### 2. The Safety Algorithm (The Logic)\nThe goal is to determine if a \"Safe Sequence\" exists. If a sequence exists where every process can finish, the system is safe.\n\n**Step-by-Step Logic:**\n1.  **Initialize:** Let `Work = Available` and `Finish[i] = false` for all processes.\n2.  **Find a process $P_i$ such that:**\n    *   `Finish[i] == false`\n    *   `Need[i] <= Work` (The system has enough resources to satisfy this process).\n3.  **If such a process exists:**\n    *   Assume the process finishes: `Work = Work + Allocation[i]`\n    *   `Finish[i] = true`\n    *   Repeat from Step 2.\n4.  **Conclusion:** If `Finish[i] == true` for all $i$, the system is in a **Safe State**.\n\n---\n\n### Why this relates to CS201\nWhile this is an OS topic, you can see the **Data Structures** at play:\n*   **2D Arrays:** The `Max`, `Allocation`, and `Need` matrices are standard 2D arrays. Accessing these requires $O(1)$ time complexity, but iterating through them to check for safety results in a complexity of **$O(n^2 \\times m)$**, where $n$ is the number of processes and $m$ is the number of resources.\n*   **Vector Operations:** The comparison `Need[i] <= Work` is a vector comparison, which is a fundamental operation in linear data structures.\n\n### Moving Forward\nSince your upcoming exam is for **CS201**, I recommend we pivot back to topics explicitly in your syllabus, such as:\n*   **AVL Tree Rotations:** Do you need help visualizing the Left-Right (LR) rotation?\n*   **Quick Sort:** Would you like to walk through the Hoare vs. Lomuto partitioning schemes?\n*   **Graph Traversals:** Do you need a comparison of the memory overhead between Adjacency Matrices and Adjacency Lists?\n\n**Which of these CS201 topics would you like to review next?**",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"Help me understand \"Deadlocks & Banker's Algorithm\" from the syllabus.\"",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing specialized workflow with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance to student workspace.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "timestamp": "10:37 am"
+        },
+        {
+          "id": "msg-u-1793945950969-yx0c6",
+          "role": "user",
+          "content": "explain about linked liist used to perform stack with code in python",
+          "timestamp": "11:49 am",
+          "mode": "normal"
+        },
+        {
+          "id": "msg-a-1793945955153-c6h9p",
+          "role": "assistant",
+          "content": "Hello! As your EDUAGENT for CS201, I am happy to explain the implementation of a **Stack using a Singly Linked List**.\n\n### 1. Conceptual Overview\nA Stack follows the **LIFO (Last-In, First-Out)** principle. When using a Linked List to implement a stack, the \"top\" of the stack corresponds to the **head** of the linked list. \n\n*   **Push operation:** Insert a new node at the head.\n*   **Pop operation:** Remove the node at the head.\n*   **Time Complexity:** Both operations are **$O(1)$**, as we only manipulate the head pointer.\n\n### 2. Memory Diagram\nImagine a stack containing `[20, 10]`. The `top` pointer points to the most recently added element.\n\n```text\n[Stack Top] -> [ 20 | Next ] -> [ 10 | None ]\n```\n*   **Push(30):** Create a new node `30`, point its `next` to `20`, and update `top` to `30`.\n*   **Pop():** Move `top` to `top.next` and return the value of the old `top`.\n\n---\n\n### 3. Python Implementation\n\nTo implement this, we define a `Node` class and a `Stack` class.\n\n```python\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedStack:\n    def __init__(self):\n        self.top = None  # Pointer to the head of the list\n        self.size = 0\n\n    def push(self, data):\n        new_node = Node(data)\n        new_node.next = self.top  # Point new node to current top\n        self.top = new_node       # Update top to the new node\n        self.size += 1\n\n    def pop(self):\n        if self.is_empty():\n            return \"Stack Underflow\"\n        popped_node = self.top\n        self.top = self.top.next  # Move top to the next node\n        self.size -= 1\n        return popped_node.data\n\n    def is_empty(self):\n        return self.top is None\n\n    def peek(self):\n        return self.top.data if not self.is_empty() else None\n```\n\n---\n\n### 4. Key Academic Considerations\n\n1.  **Dynamic Memory:** Unlike an array-based stack, a Linked List stack does not require a fixed size. It grows and shrinks dynamically, utilizing heap memory for each new node.\n2.  **Pointer Manipulation:** The critical step in `push` is `new_node.next = self.top`. If you reverse the order of operations, you risk losing the reference to the rest of the stack (a common cause of memory leaks in languages like C++).\n3.  **Comparison with Array Implementation:**\n    *   **Array-based:** Requires $O(n)$ time for resizing (if the array becomes full) and has a fixed capacity.\n    *   **Linked List-based:** Always $O(1)$ for push/pop, but requires extra memory for storing the `next` pointer in each node.\n\n**Study Tip:** When preparing for exams, be prepared to draw the pointer changes for a `pop` operation. Always ensure you handle the \"Stack Underflow\" case (when `top` is `None`) to prevent runtime errors.\n\nDo you have any questions regarding the pointer logic or the complexity analysis of this structure?",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"explain about linked liist used to perform stack with code in python\"",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing specialized workflow with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance to student workspace.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "mode": "normal",
+          "timestamp": "11:49 am"
+        },
+        {
+          "id": "msg-u-1793946241762-arq7t",
+          "role": "user",
+          "content": "give a pitch on data structure?",
+          "timestamp": "11:54 am",
+          "mode": "normal"
+        },
+        {
+          "id": "msg-a-1793946248789-xohja",
+          "role": "assistant",
+          "content": "Hello! As your EDUAGENT for CS201, I am pleased to provide a conceptual \"pitch\" for the study of Data Structures.\n\nIn the realm of computer science, **Data Structures** are the fundamental architectural blueprints for organizing, managing, and storing data so that it can be accessed and modified efficiently. If an algorithm is the \"logic\" or the \"recipe\" for solving a problem, the data structure is the \"workspace\" or the \"pantry\" where your ingredients are organized.\n\nHere is why mastering Data Structures is the most critical investment you will make in your engineering degree:\n\n### 1. The Efficiency Paradigm (Time vs. Space)\nIn engineering, we rarely care if a program works; we care if it works *well* under constraints. \n*   **The Problem:** Storing a million records in an unsorted array makes searching $O(n)$. \n*   **The Solution:** By utilizing a **Binary Search Tree (BST)** or a **Hash Table**, we can reduce that search time to $O(\\log n)$ or $O(1)$ respectively. \n*   **The Pitch:** Data structures allow us to trade memory (space complexity) for speed (time complexity), a core trade-off in every professional software system.\n\n### 2. Scalability and Real-World Application\nEvery major technology you use relies on the structures we cover in this course:\n*   **Linked Lists:** Essential for dynamic memory management where the size of the data is unknown at compile time.\n*   **Stacks:** The backbone of function calls, recursion, and \"Undo\" features in your favorite IDEs.\n*   **Graphs:** The mathematical foundation for Google Maps (Dijkstra’s Algorithm) and social network connectivity (BFS/DFS).\n*   **Priority Queues:** The engine behind task scheduling in operating systems.\n\n### 3. The \"Toolbox\" Philosophy\nAn engineer is only as good as their toolkit. If you only know how to use an Array, every problem will look like a linear search. By mastering the full spectrum—from **AVL Trees** (for self-balancing data) to **Circular Queues** (for efficient buffer management)—you gain the ability to choose the *optimal* structure for the specific constraints of your project.\n\n### 4. Algorithmic Thinking\nData structures force you to think about **Invariants**. Whether it is the \"Boundary Invariant\" in Binary Search or the \"Greedy Invariant\" in Dijkstra’s, these structures teach you to prove why your code is correct and why it will not crash when the input size grows from 10 to 10 million.\n\n***\n\n**Summary for your academic journey:**\nData Structures are not just abstract concepts; they are the difference between a system that hangs under load and a system that scales globally. As we progress through this course, we will move from the primitive (Arrays/Pointers) to the complex (Self-balancing trees/Graphs). \n\n**Which of these topics would you like to dive into first?** I am ready to provide a deep-dive, a memory diagram, or a complexity analysis whenever you are ready.",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"give a pitch on data structure?\"",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing specialized workflow with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance to student workspace.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "mode": "normal",
+          "timestamp": "11:54 am"
+        },
+        {
+          "id": "msg-u-1793970910343-61fzb",
+          "role": "user",
+          "content": "I need step-by-step remediation on \"Worst, Average, and Amortized Time Complexity\". Please break down the core invariant and common mistakes.",
+          "timestamp": "06:45 pm",
+          "mode": "normal"
+        },
+        {
+          "id": "msg-a-1793970914958-ox08e",
+          "role": "assistant",
+          "content": "Hello! I am EDUAGENT. I understand that Time Complexity can feel abstract, but it is essentially just a way to measure how \"busy\" your computer gets as your data grows. Let’s break this down into simple, manageable pieces.\n\n---\n\n### 1. The Intuitive Analogy: \"The Library Search\"\n\nImagine you are looking for a specific book in a library:\n\n*   **Worst-Case (The Pessimist):** You check every single shelf, and the book is either at the very last spot or not there at all. This is the **guarantee**—the absolute maximum time it could take.\n*   **Average-Case (The Realist):** You pick books at random. Sometimes it's the first one you grab, sometimes it's the last. Over 1,000 searches, you find the book, on average, halfway through the library.\n*   **Amortized (The Accountant):** Imagine you have a \"Loyalty Card.\" Every 10th visit, you have to fill out a 5-minute form, but the other 9 visits are instant. If you spread that 5-minute cost over 10 visits, each visit \"costs\" you only 30 extra seconds. **Amortized analysis** looks at the *long-term average* of a sequence of operations, not just one.\n\n---\n\n### 2. Step-by-Step Breakdown\n\n#### A. Worst-Case ($O$)\n*   **Definition:** The upper bound. It tells you: \"No matter how bad the input is, the algorithm will never be slower than this.\"\n*   **Focus:** We look for the \"bottleneck\" (e.g., a nested loop).\n\n#### B. Average-Case ($\\Theta$)\n*   **Definition:** The expected behavior over all possible inputs.\n*   **Focus:** We calculate the probability of each input and find the weighted average.\n\n#### C. Amortized Complexity\n*   **Definition:** The average cost per operation over a *worst-case sequence* of operations.\n*   **Key Concept:** Some operations are expensive, but they happen so rarely that they don't drag down the overall performance.\n\n---\n\n### 3. Common Pitfalls & Boundary Traps\n\n1.  **Confusing Amortized with Average:** Students often think they are the same. **Remember:** Average-case depends on the *input distribution* (random data). Amortized depends on the *sequence of operations* (e.g., resizing a dynamic array).\n2.  **Ignoring Constants:** In Big-O, we drop constants (e.g., $2n$ becomes $O(n)$). Students often try to keep them, which makes the analysis unnecessarily complex.\n3.  **The \"Best Case\" Trap:** Never use the Best Case (e.g., finding the item on the first try) to describe the performance of an algorithm. It is rarely useful in professional engineering.\n\n---\n\n### 4. Concrete Example: Dynamic Array (Amortized Analysis)\n\nThink of a Python `list` or C++ `std::vector`. When it's full, it doubles in size.\n\n*   **Normal Operation:** Adding an element is $O(1)$.\n*   **The \"Resize\" Operation:** When the array is full, we must copy all $n$ elements to a new array. This is $O(n)$.\n*   **Amortized Logic:**\n    *   If we double the size, we only trigger the $O(n)$ copy operation rarely.\n    *   If you perform $n$ insertions, the total cost is $n$ (for the simple adds) + $n$ (for the occasional copies).\n    *   Total cost = $2n$.\n    *   **Amortized cost per insertion = $2n / n = O(1)$.**\n\n---\n\n### 5. Self-Check Question\n\nTo build your confidence, try to answer this:\n\n**Scenario:** You have a function that searches for a number in an array. \n*   If the number is at index 0, it takes 1 step. \n*   If the number is at index $n-1$, it takes $n$ steps.\n\n**Question:** If I ask you for the **Worst-Case** complexity, should you tell me it is $O(1)$, $O(n)$, or $O(n/2)$? \n\n*(Take a moment to think—there is no penalty for guessing!)*",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"I need step-by-step remediation on \"Worst, Average, and Amortized Time Complexit\" [Mode: normal]",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Evaluating Learner Profile",
+              "description": "Student: Alex Morgan | Status: Needs Attention (Avg: 0%) | Weak Topics: 6",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing Academic Tutor Agent workflow (Simplified & Step-by-Step Remedial Guidance) with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance tailored to student performance.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "personalization": {
+            "masteryLevel": "Needs Attention",
+            "explanationMode": "Simplified & Step-by-Step Remedial Guidance",
+            "courseScore": 0,
+            "totalQuizzes": 2,
+            "weakTopics": [
+              "Worst, Average, and Amortized Time Complexity",
+              "Infix to Postfix Conversion & Expression Evaluation",
+              "Adjacency Matrix vs Adjacency List Representations",
+              "AVL Trees and Self-Balancing Rotations",
+              "Binary Search Tree (BST) Insertion and Deletion",
+              "Merge Sort and Divide-and-Conquer Recurrence"
+            ],
+            "repeatedMistakes": [
+              "Worst, Average, and Amortized Time Complexity (2 misses)",
+              "Infix to Postfix Conversion & Expression Evaluation (2 misses)",
+              "Adjacency Matrix vs Adjacency List Representations (2 misses)",
+              "AVL Trees and Self-Balancing Rotations (2 misses)"
+            ],
+            "strongTopics": [
+              "Abstract Data Types (ADT) and Primitive Structures",
+              "Asymptotic Notations (Big-O, Omega, Theta)"
+            ],
+            "recommendations": {
+              "nextTopicToStudy": "Abstract Data Types (ADT) and Primitive Structures",
+              "conceptToRevise": "Worst, Average, and Amortized Time Complexity",
+              "revisionReason": "Missed across 2 quiz questions (Nov 6, 2026)",
+              "practiceQuestionPrompt": "Explain step-by-step how Worst, Average, and Amortized Time Complexity maintains structural invariants, and give a worked example.",
+              "recommendedLecture": {
+                "keyword": "avl",
+                "title": "AVL Trees and Tree Rotations (LL, RR, LR, RL) Detailed Step-by-Step",
+                "channel": "Abdul Bari",
+                "url": "https://www.youtube.com/watch?v=jDM6_TnYIqE",
+                "duration": "38m"
+              }
+            }
+          },
+          "mode": "normal",
+          "socraticState": null,
+          "timestamp": "06:45 pm"
+        },
+        {
+          "id": "msg-u-1793976458123-hdze8",
+          "role": "user",
+          "content": "explain heaps",
+          "timestamp": "08:17 pm",
+          "mode": "normal"
+        },
+        {
+          "id": "msg-a-1793976466405-8oc9f",
+          "role": "assistant",
+          "content": "Hello! I am EDUAGENT. I understand that you are working hard to build your foundation in Data Structures and Algorithms. Let’s tackle **Heaps** today. While this topic is closely related to your syllabus on **Priority Queues**, it is a fundamental building block for understanding how we manage data efficiently.\n\n---\n\n### 1. The Intuitive Concept: The \"Tournament Bracket\"\nImagine a sports tournament where the winner of every match moves up to the next level. In a **Max-Heap**, the \"winner\" (the largest number) is always at the very top. \n\nUnlike a Binary Search Tree (BST) where the left child is smaller and the right is larger, a Heap only cares about one rule: **The parent must be greater than (or equal to) its children.** It doesn't care about the left-vs-right relationship. This makes it a \"partially ordered\" tree.\n\n### 2. Step-by-Step: How a Heap Works\nA Heap is usually implemented as an **Array** rather than a linked structure. For an element at index `i`:\n*   **Left Child:** `2i + 1`\n*   **Right Child:** `2i + 2`\n*   **Parent:** `(i - 1) / 2`\n\n**To Insert a new element:**\n1.  **Place it at the end:** Put the new element in the first empty spot at the bottom of the tree (the end of the array).\n2.  **Bubble Up (Percolate Up):** Compare the new element with its parent. If the new element is larger, swap them.\n3.  **Repeat:** Keep swapping until the parent is larger than the new element or you reach the root.\n\n### 3. Common Pitfalls & Boundary Traps\n*   **The \"Complete Tree\" Rule:** Students often forget that a Heap *must* be a **Complete Binary Tree**. This means every level must be filled before moving to the next, and nodes must be filled from left to right. If you leave a gap, it is not a heap!\n*   **Array Indexing:** A common error is mixing up 0-based indexing (`2i+1`) with 1-based indexing (`2i`). Always verify which one your exam or code uses.\n*   **Confusion with BST:** Remember: **A Heap is NOT a BST.** You cannot perform an \"in-order traversal\" to get a sorted list from a heap.\n\n### 4. Concrete Example: Inserting '15' into a Max-Heap\n**Current Heap (Array):** `[10, 8, 9, 7]`\n\n1.  **Add 15 to the end:** `[10, 8, 9, 7, 15]`\n2.  **Compare 15 with parent (index 1, value 8):** 15 > 8, so **Swap**.\n    *   Array: `[10, 15, 9, 7, 8]`\n3.  **Compare 15 with parent (index 0, value 10):** 15 > 10, so **Swap**.\n    *   Array: `[15, 10, 9, 7, 8]`\n4.  **Done:** 15 is now at the root.\n\n### 5. Code Snippet (Python-style logic)\n```python\ndef bubble_up(heap, index):\n    parent = (index - 1) // 2\n    # If current is greater than parent, swap\n    if index > 0 and heap[index] > heap[parent]:\n        heap[index], heap[parent] = heap[parent], heap[index]\n        # Recursively move up\n        bubble_up(heap, parent)\n```\n\n### 6. Self-Check Question\nIf you have a Max-Heap represented by the array `[20, 15, 18, 10, 12]`, and you insert the number **19**, where will the number **19** end up after the \"bubble up\" process is complete? \n\n*(Hint: Draw the tree structure first!)*\n\nYou are doing a great job by asking these questions. Take your time with the tree diagram—visualizing the parent-child relationships is the secret to mastering this topic!",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"explain heaps\" [Mode: normal]",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS201: Data Structures and Algorithms (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Evaluating Learner Profile",
+              "description": "Student: Alex Morgan | Status: Needs Attention (Avg: 15%) | Weak Topics: 10",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing Academic Tutor Agent workflow (Simplified & Step-by-Step Remedial Guidance) with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance tailored to student performance.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "personalization": {
+            "masteryLevel": "Needs Attention",
+            "explanationMode": "Simplified & Step-by-Step Remedial Guidance",
+            "courseScore": 15,
+            "totalQuizzes": 4,
+            "weakTopics": [
+              "Merge Sort and Divide-and-Conquer Recurrence",
+              "Infix to Postfix Conversion & Expression Evaluation",
+              "Binary Search & Boundary Invariants",
+              "Quick Sort Partitioning and Worst-Case Avoidance",
+              "Singly Linked List Pointer Operations",
+              "Doubly Linked List Pointer Operations",
+              "Worst, Average, and Amortized Time Complexity",
+              "Adjacency Matrix vs Adjacency List Representations",
+              "AVL Trees and Self-Balancing Rotations",
+              "Binary Search Tree (BST) Insertion and Deletion"
+            ],
+            "repeatedMistakes": [
+              "Merge Sort and Divide-and-Conquer Recurrence (4 misses)",
+              "Infix to Postfix Conversion & Expression Evaluation (3 misses)",
+              "Binary Search & Boundary Invariants (3 misses)",
+              "Quick Sort Partitioning and Worst-Case Avoidance (3 misses)",
+              "Singly Linked List Pointer Operations (2 misses)",
+              "Doubly Linked List Pointer Operations (2 misses)",
+              "Worst, Average, and Amortized Time Complexity (2 misses)",
+              "Adjacency Matrix vs Adjacency List Representations (2 misses)",
+              "AVL Trees and Self-Balancing Rotations (2 misses)"
+            ],
+            "strongTopics": [
+              "Stack Implementation via Arrays and Linked Lists",
+              "Abstract Data Types (ADT) and Primitive Structures",
+              "Asymptotic Notations (Big-O, Omega, Theta)"
+            ],
+            "recommendations": {
+              "nextTopicToStudy": "Abstract Data Types (ADT) and Primitive Structures",
+              "conceptToRevise": "Merge Sort and Divide-and-Conquer Recurrence",
+              "revisionReason": "Missed across 4 quiz questions (Nov 6, 2026)",
+              "practiceQuestionPrompt": "Explain step-by-step how Merge Sort and Divide-and-Conquer Recurrence maintains structural invariants, and give a worked example.",
+              "recommendedLecture": {
+                "keyword": "sort",
+                "title": "Sorting Algorithms Compared: MergeSort, QuickSort, HeapSort in Depth",
+                "channel": "CS50 / Harvard University",
+                "url": "https://www.youtube.com/watch?v=kgBjXUE_Nwc",
+                "duration": "1h 12m"
+              }
+            }
+          },
+          "mode": "normal",
+          "socraticState": null,
+          "timestamp": "08:17 pm"
+        }
+      ],
+      "course-cs301:all": [
+        {
+          "id": "msg-u-1793941824206-8av5r",
+          "role": "user",
+          "content": "Help me understand \"Deadlocks & Banker's Algorithm\" from the syllabus.",
+          "timestamp": "10:40 am"
+        },
+        {
+          "id": "msg-a-1793941827810-ezxlq",
+          "role": "assistant",
+          "content": "Hello! I am **EDUAGENT**. Let’s break down the concepts of Deadlocks and the Banker’s Algorithm, which are critical components of resource management in Operating Systems.\n\n---\n\n### 1. Deadlock Characterization\nA deadlock occurs when a set of processes are blocked because each process is holding a resource and waiting to acquire a resource held by another process in the set.\n\nFor a deadlock to occur, the following **four Coffman conditions** must hold simultaneously:\n1. **Mutual Exclusion:** At least one resource must be held in a non-sharable mode.\n2. **Hold and Wait:** A process must be holding at least one resource and waiting to acquire additional resources held by others.\n3. **No Preemption:** Resources cannot be forcibly taken from a process.\n4. **Circular Wait:** A circular chain of processes exists, where each process holds a resource requested by the next process in the chain.\n\n---\n\n### 2. The Banker’s Algorithm\nThe Banker’s Algorithm is a **deadlock avoidance** strategy. It simulates the allocation of predetermined maximum possible amounts of resources. It ensures that the system never enters an **unsafe state** (a state where a deadlock *could* potentially occur).\n\n#### Data Structures (for $n$ processes and $m$ resource types):\n*   **Available:** Vector of length $m$. If `Available[j] = k`, there are $k$ instances of resource type $R_j$ available.\n*   **Max:** $n \\times m$ matrix. `Max[i][j] = k` means process $P_i$ may request at most $k$ instances of $R_j$.\n*   **Allocation:** $n \\times m$ matrix. `Allocation[i][j] = k` means $P_i$ is currently allocated $k$ instances of $R_j$.\n*   **Need:** $n \\times m$ matrix. `Need[i][j] = Max[i][j] - Allocation[i][j]`.\n\n---\n\n### 3. Safety Algorithm (The Core Logic)\nTo determine if a state is safe, we check if there exists a **safe sequence** of processes $\\langle P_1, P_2, ..., P_n \\rangle$ such that for each $P_i$, the resources that $P_i$ can still request can be satisfied by the currently available resources plus the resources held by all $P_j$ (where $j < i$).\n\n**Step-by-Step Execution:**\n1. Let `Work = Available` and `Finish[i] = false` for all $i$.\n2. Find an index $i$ such that:\n   * `Finish[i] == false`\n   * `Need[i] <= Work`\n3. If no such $i$ exists, go to step 5.\n4. `Work = Work + Allocation[i]`\n   `Finish[i] = true`\n   Go to step 2.\n5. If `Finish[i] == true` for all $i$, the system is in a **Safe State**.\n\n---\n\n### 4. Resource Request Algorithm\nWhen process $P_i$ makes a request `Request_i`:\n1. **Check:** If `Request_i <= Need_i`, proceed. Else, raise error (exceeded max claim).\n2. **Check:** If `Request_i <= Available`, proceed. Else, $P_i$ must wait (resources unavailable).\n3. **Pretend Allocation:**\n   * `Available = Available - Request_i`\n   * `Allocation_i = Allocation_i + Request_i`\n   * `Need_i = Need_i - Request_i`\n4. **Run Safety Algorithm:**\n   * If the resulting state is **Safe**, grant the resources.\n   * If **Unsafe**, restore the original values and $P_i$ must wait.\n\n---\n\n### Study Tip for Exams\nWhen solving Banker's Algorithm problems:\n*   **Always calculate the `Need` matrix first.** Students often forget to subtract `Allocation` from `Max`.\n*   **Remember:** A \"Safe State\" is not a deadlock, but an \"Unsafe State\" does not guarantee a deadlock—it only means a deadlock *might* occur.\n\n**Would you like to walk through a numerical example with a specific set of resources and processes?**",
+          "steps": [
+            {
+              "step": "Analysing Student Request",
+              "description": "Evaluating semantic intent: \"Help me understand \"Deadlocks & Banker's Algorithm\" from the syllabus.\"",
+              "status": "completed"
+            },
+            {
+              "step": "Checking Academic Syllabus",
+              "description": "Verified alignment with CS301: Operating Systems (All Units).",
+              "status": "completed"
+            },
+            {
+              "step": "Selecting Specialised Agent",
+              "description": "Routed request to Academic Tutor Agent.",
+              "status": "completed"
+            },
+            {
+              "step": "Executing Agentic Task",
+              "description": "Executing specialized workflow with 3-key rotation pool and grounded syllabus notes.",
+              "status": "completed"
+            },
+            {
+              "step": "Validating Results",
+              "description": "Verified academic integrity, formatting standards, and credential safety.",
+              "status": "completed"
+            },
+            {
+              "step": "Delivering Final Response",
+              "description": "Delivered synthesized educational guidance to student workspace.",
+              "status": "completed"
+            }
+          ],
+          "selectedAgent": "Academic Tutor Agent",
+          "timestamp": "10:40 am"
+        }
+      ]
+    }
+  }
+}

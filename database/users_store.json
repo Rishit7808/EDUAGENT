@@ -1,0 +1,42 @@
+[
+  {
+    "id": "admin-1",
+    "name": "Administrator",
+    "email": "admin@eduagent.ac",
+    "passwordHash": "118b",
+    "role": "admin",
+    "semester": "All Semesters"
+  },
+  {
+    "id": "student-1",
+    "name": "Alex Morgan",
+    "email": "student@eduagent.ac",
+    "passwordHash": "31d0cac2bc3336ff3bcbd9c96be27659$5002792068b282d56fe5dc14afa6ca297f7fee27a9c770639a9d4749bb33fb74",
+    "role": "student",
+    "semester": "Semester III"
+  },
+  {
+    "id": "student-1793911629721",
+    "name": "Priya Sharma",
+    "email": "sem2_student_1793911627@eduagent.ac",
+    "passwordHash": "96ffba3ce6377b04728b46f2c9905951$d38ed1249db982259f837f49c69cf3df1eeae2cb4c82977ce43a0373dffc5e80",
+    "role": "student",
+    "semester": "Semester II"
+  },
+  {
+    "id": "student-1793931311171",
+    "name": "Priya Sharma",
+    "email": "sem2_student_1793931309@eduagent.ac",
+    "passwordHash": "dc932fb866ab5860d650802aa667f62c$d6b8fc34a2d4f39f3afeaa42568099ccb5d7a7114fa3519b44be7e9dde82237e",
+    "role": "student",
+    "semester": "Semester II"
+  },
+  {
+    "id": "student-1793933492594",
+    "name": "Priya Sharma",
+    "email": "sem2_student_1793933490@eduagent.ac",
+    "passwordHash": "ef073f7a632a417244c387ed1974bc8f$415be4f052d775d905fea923326e4687f8da420d73810595b52b8d9cb4934bbf",
+    "role": "student",
+    "semester": "Semester II"
+  }
+]

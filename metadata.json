@@ -1,0 +1,6 @@
+{
+  "name": "EDUAGENT - Autonomous Multi-Agent AI Education Platform",
+  "description": "Autonomous Multi-Agent AI Ecosystem for Education and Personalised Learning featuring intelligent course coordination, academic tutoring, syllabus research, video discovery, semester planning, and adaptive assessments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
