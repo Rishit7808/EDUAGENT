@@ -13,6 +13,8 @@ coverage/
 database/backup/
 *.log
 .DS_Store
+.aistudio/
+
 
 # Python virtual environment and cache
 __pycache__/
